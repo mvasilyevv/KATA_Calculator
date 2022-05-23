@@ -79,7 +79,7 @@ public class Main {
 
     // Проверка строки на тип числа
     private static boolean identifyTypeNumber(String[] numbers) {
-        return numbers[0].matches("[0-9]+") && numbers[1].matches("[0-9]+");
+        return numbers[0].matches("[0-9]+") || numbers[1].matches("[0-9]+");
     }
 
     public static String calc(String input) throws NumbersException {
